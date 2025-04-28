@@ -20,7 +20,7 @@ body {
 
 main {
     border-radius: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: auto;
     background-color: rgb(25, 111, 116);
     width: 70%;
@@ -55,6 +55,14 @@ li {
     display: inline-block;
 }
 
+p a
+ {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 0.5s;
+}
 a,
 #submit {
     color: rgb(25, 111, 116);
@@ -85,6 +93,8 @@ ul {
     margin: auto;
     background-color: rgb(255, 255, 255);
     padding: 2em;
+
+    color:black;
     border-color: black;
     border-width: 1px;
     border-style: solid;
@@ -99,9 +109,6 @@ form {
 
 }
 
-#progression {
-    margin-bottom: 2em;
-}
 
 label {
     text-align: left;
@@ -143,6 +150,7 @@ button a {
 .section p {
     padding: 0;
     margin: auto;
+    color: black;
 }
 
 h3,
@@ -157,6 +165,7 @@ main {
 
 .deletebutton {
     border-radius: 10px;
+    width: 20%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -164,27 +173,27 @@ main {
     text-decoration: underline;
 }
 
-.courses {
+#explist {
     color: black;
     display: block;
     padding: 1em;
     text-align: left;
-    width: 90%;
+
+    width: 50%;
     font-weight: 500;
-    margin-top: 2em;
+    margin-top: 1em;
 }
-.courses li {
-   
+main li {
+border-color: black;
+border-style: solid;
+border-width: 1px;
+padding: 1em;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 
-.courses li a {
-    display: flex;
-  padding:0;
 
-}
 
 
 
@@ -201,39 +210,40 @@ article p{
 .section {
     margin-bottom: 2em;
     width: 100%;
+    
 
 }
 
-.section a {
-    font-size: smaller;
+#explist li {
+    align-items: center;
+
 }
+
 
 
 @media all and (max-width: 900px) {
     li a {
         font-size: 12px;
     }
+
+    #explist {
+        width: 80%;
+    }
+
+
+  .deletebutton {
+    padding: 1em;
+    width: 100%;
+  }
+
 #headertext {
     font-size: 24px;
 }
-    #error,
-    #saved {
-        margin: auto;
-        padding: 2em;
-        color: rgb(255, 223, 118);
-        font-weight: 600;
-        width: 50%;
-    }
 
     form {
         width: 70%;
     }
     
-.courses li a {
-    display: flex;
-  padding:0em;
-  font-size: 10px;
-}
 
 nav ul {
         width: 100%;
